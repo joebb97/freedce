@@ -525,6 +525,7 @@ extern int
 pthd4exc_getunique_np __P(( pthread_t * handle));
 
 #ifndef HAVE_OS_WIN32
+#include <signal.h>
 extern int
 pthd4exc_signal_to_cancel_np __P(( sigset_t * sig, pthread_t * thd));
 #endif
